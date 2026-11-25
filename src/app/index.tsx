@@ -1,3 +1,5 @@
+import { CameraView, useCameraPermissions } from 'expo-camera';
+import * as MediaLibrary from 'expo-media-library/legacy';
 import { useRef, useState } from 'react';
 import {
   Alert,
@@ -9,8 +11,6 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { CameraView, useCameraPermissions } from 'expo-camera';
-import * as MediaLibrary from 'expo-media-library/legacy';
 
 export default function App() {
   const [facing, setFacing] = useState('back');

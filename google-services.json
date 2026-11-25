@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "581591629052",
+    "project_id": "react-camara-a53aa",
+    "storage_bucket": "react-camara-a53aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581591629052:android:7af30cabdd544ff3eb6b79",
+        "android_client_info": {
+          "package_name": "com.juanhrdz.reactCamara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdl3ryVUFixb5kjqNefjG5Sh6xaVQxjiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

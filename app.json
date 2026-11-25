@@ -8,9 +8,12 @@
     "scheme": "reactcamaranuevo",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.juanhrdz.reactCamara",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -18,7 +21,7 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.ivanna18.reactcamaranuevo"
+      "package": "com.juanhrdz.reactCamara"
     },
     "web": {
       "output": "static",
@@ -33,7 +36,26 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "FotoApuntes necesita acceso a tus fotos para analizar tus apuntes.",
+          "cameraPermission": "FotoApuntes necesita acceso a la cámara para tomar una foto de tus apuntes.",
+          "microphonePermission": false
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/app-check",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "dynamic"
+          }
+        }
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -42,8 +64,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "7ea640cd-f31c-494c-8f3f-3c6ee22a4bac"
+        "projectId": "cbe5dd74-81dd-46e5-bdc6-c18710626a73"
       }
-    }
+    },
+    "owner": "juanhrdz"
   }
 }
